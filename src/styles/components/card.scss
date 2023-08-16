@@ -1,0 +1,30 @@
+.product-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    
+}
+
+.product-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-title {
+    color: white;
+    z-index: 2;
+    font-size: 18px;
+}
+
+
+.product-link {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+

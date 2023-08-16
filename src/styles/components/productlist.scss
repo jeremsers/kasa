@@ -1,0 +1,18 @@
+.productlist-container {
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 50px 50px;
+}
+
+.product-card{
+    width: 29%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}

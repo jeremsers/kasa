@@ -1,0 +1,11 @@
+.carrousel-container{
+    height: 415px;
+    border-radius: 25px ;
+    overflow: hidden;
+    margin-top: 50px;
+    & img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+}
