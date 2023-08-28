@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logoHeader.svg";
 import { Link } from "react-router-dom";
 import "../styles/layout/Header.scss";
 
@@ -12,8 +12,8 @@ function Header() {
 				</div>
 
 				<nav className="navbar">
-					<Link to="/aboutus">about</Link>
-					<Link to="/product">produit</Link>
+					<Link to="/">Accueil</Link>
+					<Link to="/aboutus">A propos</Link>
 				</nav>
 			</div>
 		</>

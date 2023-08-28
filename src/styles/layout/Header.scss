@@ -2,18 +2,20 @@
     display : flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 45px;
     align-items: center;
+    margin-top: 45px;
+    
 }
 
 
 .navbar {
     display: flex;
     flex-direction: row;
-    gap: 57px;
-
+    gap: clamp(15px,2vw,57px);
+    align-items: center;
     & a{
-        font-size: 24px;
+        font-size: clamp(12px,4vw,24px);
+        font-weight: 500;
         color: #FF6060;
         text-decoration: none;
         &:hover{
@@ -22,18 +24,28 @@
     }
 }
 
+.logo{
+    width: 210px;
+    height: 61px;
+    color: #FF6060;
+    @media (max-width:768px) {
+        width: clamp(145px,45vw,210px);
+        height: auto;
 
+        
+    }
+}
 
 .link-container{
+    position: relative;
     box-sizing: content-box;
-    position: relative
 }
 
 .home-link {
- position: absolute;
- top: 0;
- bottom: 0;
- right: 0;
- left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 

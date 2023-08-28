@@ -1,4 +1,4 @@
-import '../styles/base/App.scss';
+import '../styles/App.scss';
 import Home from './Home';
 
 

@@ -15,11 +15,11 @@ function Home() {
 						alt="paysage naturel"
 						className="background-img"
 					></img>
-					<p>Chez vous, partout et ailleurs</p>
+					<h1>Chez vous, partout et ailleurs</h1>
 				</div>
 				<ProductList />
-                <Footer />
 			</div>
+                <Footer />
 		</>
 	);
 }

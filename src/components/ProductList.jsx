@@ -9,10 +9,10 @@ function ProductList() {
 			<div className="productlist-container">
 				{logements.map((logement) => (
 					<article className="product-card" key={logement.id}>
-						<Card title={logement.title} cover={logement.cover} id={logement.id} />
+						<Card logement={logement} />
                         
 					</article>
-				))}
+))}
 			</div>
 		</>
 	);

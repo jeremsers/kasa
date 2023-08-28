@@ -2,16 +2,16 @@ import "../styles/components/card.scss"
 import { Link } from "react-router-dom";
 
 
-function Card({ cover, title, id }) {
+function Card({ logement }) {
 
     
 
 	return (
 		<>
 			<div className="product-container">
-				<img src={cover} alt={title} className="product-cover"></img>
-				<h3 className="product-title">{title}</h3>
-                <Link className="product-link" to={`/product/${id}`}></Link>
+				<img src={logement.cover} alt={logement.title} className="product-cover"></img>
+				<h3 className="product-title">{logement.title}</h3>
+                <Link className="product-link" to={`/product/${logement.id}`} state={logement}></Link>
 			</div>
 		</>
 	);
