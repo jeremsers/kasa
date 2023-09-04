@@ -1,6 +1,6 @@
-import "../styles/components/carrousel.scss";
-import leftArr from "../assets/arrow_left.svg";
-import rightArr from "../assets/arrow_right.svg";
+
+import leftArr from "../../assets/arrow_left.svg";
+import rightArr from "../../assets/arrow_right.svg";
 
 
 function Overlay({ selector, updateselector, img }) {

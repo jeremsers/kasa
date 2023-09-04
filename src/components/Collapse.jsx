@@ -1,4 +1,4 @@
-import "../styles/components/collapse.scss";
+
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -11,7 +11,7 @@ function Collapse({ content,type }) {
 		setIsActive((current) => !current);
 	};
 
-	console.log(content);
+	
 	return (
 		<>
 			<div className="collapse">

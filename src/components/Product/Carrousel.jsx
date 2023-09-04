@@ -1,12 +1,9 @@
-import "../styles/components/carrousel.scss";
-
 import { useState } from "react";
 import Overlay from "./Overlay";
 
 function Carrousel({ img }) {
 	const [selector, updateselector] = useState(0);
 
-	
 	return (
 		<>
 			<div className="carrousel-container">

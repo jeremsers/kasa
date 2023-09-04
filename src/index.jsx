@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/base/index.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Product from "./components/Product";
-import About from "./components/About";
-import Error from "./components/Error";
+import "./styles/main.scss";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Pages/Home";
+import Product from "./components/Pages/Product";
+import About from "./components/Pages/About";
+import Error from "./components/Pages/Error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,4 +21,3 @@ root.render(
 		</Router>
 	</React.StrictMode>
 );
-

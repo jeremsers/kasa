@@ -1,19 +1,13 @@
-import Header from "./Header";
-import Carrousel from "./Carrousel";
-import Footer from "./Footer";
+import Header from "../Layout/Header";
+import Carrousel from "../Product/Carrousel";
+import Footer from "../Layout/Footer";
 import { Navigate } from "react-router-dom";
-import Collapse from "./Collapse";
-import "../styles/components/collapse.scss";
-import "../styles/pages/product.scss";
-import Details from "./Details";
-import logdata from "../datas/logements.json";
+import Collapse from "../Collapse";
+import Details from "../Product/Details";
+import logdata from "../../datas/logements.json";
 import { useParams } from "react-router-dom";
 
-
-
 function Product() {
-
-
 	let getId = useParams();
 	const idlist = logdata.reduce(function (p, c) {
 		return p.concat(c.id);
@@ -30,7 +24,7 @@ function Product() {
 
 	return (
 		<>
-			<div className="page-container">
+			<main className="page-container">
 				<Header />
 				<Carrousel img={logement.pictures} />
 				<Details
@@ -44,7 +38,7 @@ function Product() {
 					<Collapse content={[logement.description]} type="Description" />
 					<Collapse content={logement.equipments} type="Équipements" />
 				</section>
-			</div>
+			</main>
 			<Footer />
 		</>
 	);
